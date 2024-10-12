@@ -1,0 +1,99 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  width: 250px; /* Largeur fixe pour les cartes */
+  transition: transform 0.2s; /* Animation lors du survol */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Légère augmentation lors du survol */
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff; /* Couleur pour le titre */
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #666; /* Couleur pour le texte */
+}
+/* src/components/MovieCard.css */
+
+.movie-card {
+  background-color: white;
+  border-radius: 8px; /* Arrondir les bords de la carte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour donner un effet de profondeur */
+  margin: 15px; /* Espace autour de chaque carte */
+  padding: 20px; /* Espace interne de la carte */
+  width: 250px; /* Largeur fixe pour toutes les cartes */
+  transition: transform 0.2s; /* Transition pour l'effet de survol */
+  text-align: center; /* Centrer le texte */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Agrandir la carte au survol */
+}
+
+.movie-poster {
+  width: 100%; /* Ajuste l'image à la largeur de la carte */
+  height: auto; /* Maintient le ratio d'aspect de l'image */
+  border-radius: 5px; /* Arrondir les bords de l'image */
+  margin-bottom: 10px; /* Espace entre l'image et le titre */
+}
+
+.movie-card h2 {
+  font-size: 18px; /* Taille de la police pour le titre */
+  margin: 10px 0; /* Marge au-dessus et en dessous du titre */
+  color: #007bff; /* Couleur personnalisée pour le titre */
+}
+
+.movie-card p {
+  font-size: 14px; /* Taille de la police pour les autres textes */
+  color: #666; /* Couleur grise pour le texte */
+}
+
+.release-date {
+  font-weight: bold; /* Met le texte en gras */
+  margin: 5px 0; /* Marge au-dessus et en dessous de la date */
+  color: #444; /* Couleur plus foncée pour la date */
+}
+
+.btn {
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Supprime la bordure du bouton */
+  border-radius: 5px; /* Arrondit les bords du bouton */
+  padding: 10px; /* Espace interne du bouton */
+  cursor: pointer; /* Change le curseur lorsque l'on passe la souris */
+  transition: background-color 0.3s; /* Transition pour le survol du bouton */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Couleur du bouton au survol */
+}
